@@ -57,7 +57,9 @@ header{
     font-size: 35px;
     z-index: 101; /*queda sobre el header*/
     cursor: pointer; /*Aparece la manito cuando el mouse esta por encima*/
+    display: none;
 }
+
 #menu-toggle{
     display: none; /*No debe ser visible nunca*/
 }
@@ -267,9 +269,7 @@ section{
         margin: 7px 0;
     }
 
-    #menu-toggle:checked + label.menu-icon-action + ul{
+    .navlist.open{
         right: 0;
     }
-
-
 }
